@@ -111,20 +111,20 @@ DATABASE_URL = os.environ.get("DATABASE_URL")
 
 
 
-# DATABASES = {
-#     "default": dj_database_url.parse(DATABASE_URL)
-# }
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'task_manager',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
+    "default": dj_database_url.parse(DATABASE_URL)
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'task_manager',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
